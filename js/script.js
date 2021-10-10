@@ -12,7 +12,6 @@
       modal.style.display = "block";
       modalImage.src = this.src;
       caption.innerHTML = this.alt;
-      console.log(caption);
     }
   }
 
@@ -26,3 +25,16 @@
   Close.onclick = function () {
     modal.style.display = "none";
   }
+
+  const burgerMenu = document.getElementById('burger-menu');
+const overlay = document.getElementById('menu');
+burgerMenu.addEventListener('click',function(){
+  this.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+});
+
+overlay.onclick = ("click", (e) => {
+    if(e.target.classList != contains("overlay")) {
+        this.classList.toggle("close");
+    }
+});

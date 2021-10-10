@@ -1,0 +1,58 @@
+/*Tablet view*/
+@media screen and (max-width: 890px) {
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+  p {
+    max-width: 100%;
+  }
+
+  #menu {
+    flex-direction: column;
+  }
+
+  #burger-menu {
+    display: block;
+  }
+
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 500px;
+    position: fixed;
+    top: 0;
+    height: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/*Menu hamburger View*/
+@media screen and (max-width: 690px) {
+}
+
+/*Mobile View*/
+@media screen and (max-width: 540px) {
+  img {
+    max-width: 100%;
+  }
+
+  .links > *:first-child {
+    margin-right: 20px;
+  }
+}

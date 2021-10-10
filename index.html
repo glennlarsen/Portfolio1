@@ -20,9 +20,16 @@
         <header>
           <h1>Portfolio 1</h1>
           <nav>
-            <a href="#rainyDays">Rainy days</a>
-            <a href="#cms">Community Science Museum</a>
-            <a href="#foreverAbroad">Forever Abroad</a>
+            <div id="burger-menu">
+              <span></span>
+            </div>
+            <div id="menu">
+              <ul>
+                <a href="#rainyDays">Rainy days</a>
+                <a href="#cms">Community Science Museum</a>
+                <a href="#foreverAbroad">Forever Abroad</a>
+              </ul>
+            </div>
           </nav>
         </header>
         <main>
@@ -119,13 +126,13 @@
               </p>
             </div>
             <div class="page-divider">
-            <div class="line"></div>
-            <a href="#cms" class="next">
-              <div>Next</div>
-              <i class="fas fa-angle-double-down"></i>
-            </a>
-            <div class="line"></div>
-        </div>
+              <div class="line"></div>
+              <a href="#cms" class="next">
+                <div>Next</div>
+                <i class="fas fa-angle-double-down"></i>
+              </a>
+              <div class="line"></div>
+            </div>
           </section>
           <section id="cms">
             <h2>Community Science Museum</h2>
@@ -192,12 +199,12 @@
               </p>
             </div>
             <div class="page-divider">
-                <div class="line"></div>
-                <a href="#foreverAbroad" class="next">
-                  <div>Next</div>
-                  <i class="fas fa-angle-double-down"></i>
-                </a>
-                <div class="line"></div>
+              <div class="line"></div>
+              <a href="#foreverAbroad" class="next">
+                <div>Next</div>
+                <i class="fas fa-angle-double-down"></i>
+              </a>
+              <div class="line"></div>
             </div>
           </section>
           <section id="foreverAbroad">
@@ -291,24 +298,26 @@
               </p>
             </div>
             <a href="#" class="next to-top">
-                <div>To top</div>
-                <i class="fas fa-angle-double-up"></i>
-              </a>
+              <div>To top</div>
+              <i class="fas fa-angle-double-up"></i>
+            </a>
           </section>
+          <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-image" />
+            <div class="caption"></div>
+          </div>
         </main>
         <footer>
-            <div class="footer-links">
+          <div class="footer-links">
             <a href="#rainyDays">Rainy days</a>
             <a href="#cms">Community Science Museum</a>
             <a href="#foreverAbroad">Forever Abroad</a>
-        </div>
-        <div class="copyright">Copyright © 2021 Portfolio 1 | All Rights Reserved</div>
-        </footer>
-        <div class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-image">
-            <div class="caption"></div>
           </div>
+          <div class="copyright">
+            Copyright © 2021 Portfolio 1 | All Rights Reserved
+          </div>
+        </footer>
       </div>
     </div>
     <script src="js/script.js"></script>
