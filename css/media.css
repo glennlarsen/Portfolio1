@@ -15,6 +15,10 @@
     max-width: 100%;
   }
 
+}
+
+/*Menu hamburger View*/
+@media screen and (max-width: 690px) {
   #menu {
     flex-direction: column;
   }
@@ -41,10 +45,6 @@
     flex-direction: column;
     padding-left: 30px;
   }
-}
-
-/*Menu hamburger View*/
-@media screen and (max-width: 690px) {
 }
 
 /*Mobile View*/
