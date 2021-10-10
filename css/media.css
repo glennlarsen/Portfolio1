@@ -30,7 +30,7 @@
   #menu {
     z-index: 1;
     min-width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     position: fixed;
     top: 0;
     height: 0;
