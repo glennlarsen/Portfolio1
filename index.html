@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Portfolio 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <header>
+          <h1>Portfolio 1</h1>
+          <nav>
+            <a href="#rainyDays">Rainy days</a>
+            <a href="#cms">Community Science Museum</a>
+            <a href="#foreverAbroad">Forever Abroad</a>
+          </nav>
+        </header>
+        <main>
+          <section id="rainyDays">
+            <h2>Rainy Days</h2>
+            <span>Cross-course Project</span>
+            <div class="links">
+              <a href="https://github.com/glennlarsen/Rainy-Days.git"
+                >Link to GitHub</a
+              >
+              <a href="https://silly-benz-3393db.netlify.app/"
+                >Link to Deployed Site</a
+              >
+            </div>
+            <div class="flex-row">
+              <div>
+                <h3>What was changed</h3>
+                <ul>
+                  <li>Inline form validation for contact form</li>
+                  <li>Added Shopping cart</li>
+                  <li>Line height to 1.5</li>
+                  <li>Footer text size to 15px</li>
+                  <li>Margin between elements in details page</li>
+                  <li>Margin between featured boxes on home page</li>
+                  <li>Color pick function on product page</li>
+                  <li>Size pick function on product page</li>
+                  <li>Add to cart CTA colors and hover contrast</li>
+                </ul>
+              </div>
+              <div>
+                <img src="images/rainydays.jpg" alt="Rainy Days Home page" />
+              </div>
+            </div>
+            <div>
+              <h3>How I changed it</h3>
+              <p>
+                Inline form validation was changed by making additional check
+                validation functions which was called in an addEventListener
+                when the input and blur event was triggered. I also disabled the
+                button and made an enable button function which was triggered
+                when the whole form was validated.
+              </p>
+              <p>
+                Shopping cart was implemented in the createHtml function which
+                was called in the API fetch function. I made the cart with HTML
+                and CSS and rendered the products added to cart into the cart
+                array which was stored in the local storage. Each product was
+                found by their ID. I made a check to see if the product was
+                already in the cart and if it was I made the number of units
+                increase for that product instead of duplicating the product for
+                each time. I have a remove function to remove an item from the
+                cart. I didn't manage to make it work properly, so it removes
+                all items instead of the actual product clicked. The cart is
+                currently only functionable in the product details page.
+              </p>
+              <p>
+                For the color and size picker on the details page I made two
+                forEach loops to loop through the elements and then added an
+                eventlistener on click to remove and add the active class which
+                I made in CSS.
+              </p>
+              <p>
+                The minor changes like Line height, text size, margins, hover
+                and colors was changed in the CSS on the specific classes.
+              </p>
+            </div>
+            <div>
+              <h3>Why I did it that way</h3>
+              <p>
+                I choose to use inline validation to give the user quicker
+                feedback on entry by showing a red or green border around the
+                input. The submit button is unclickable and with lower opacity
+                to show that the fields are required to submit.
+              </p>
+              <p>
+                I made a shopping cart to give a better user experience.
+                Shopping cart is a mandatory function for an online store.
+              </p>
+              <p>
+                Color and size pick were made functionable so that the user can
+                choose color and size for the product.
+              </p>
+              <p>
+                Line height increased to make the text easier to read and to
+                look better.
+              </p>
+              <p>
+                Margins and footer text size were changed to make the design
+                more appealing.
+              </p>
+              <p>
+                Add to cart button color and hover was changed to make the
+                contrast between the different states more visible.
+              </p>
+            </div>
+            <div class="page-divider">
+            <div class="line"></div>
+            <a href="#cms" class="next">
+              <div>Next</div>
+              <i class="fas fa-angle-double-down"></i>
+            </a>
+            <div class="line"></div>
+        </div>
+          </section>
+          <section id="cms">
+            <h2>Community Science Museum</h2>
+            <span>Semester Project 1</span>
+            <div class="links">
+              <a
+                href="https://github.com/glennlarsen/Community-Science-Museum.git"
+                >Link to GitHub</a
+              >
+              <a href="https://reverent-ptolemy-841b01.netlify.app/"
+                >Link to Deployed Site</a
+              >
+            </div>
+            <div class="flex-row">
+              <div>
+                <h3>What was changed</h3>
+                <ul>
+                  <li>Inline form validation for contact form</li>
+                  <li>Larger logo text for desktop view</li>
+                  <li>Logo scale on hover</li>
+                  <li>Hamburger menu cursor pointer</li>
+                </ul>
+              </div>
+              <div>
+                <img
+                  src="images/csm.jpg"
+                  alt="Community Science Museum Home page"
+                />
+              </div>
+            </div>
+            <div>
+              <h3>How I changed it</h3>
+              <p>
+                Inline form validation was changed by making additional check
+                validation functions which was called in an addEventListener
+                when the input and blur event was triggered. I also disabled the
+                button and made an enable button function which was triggered
+                when the whole form was validated. I added a standard function
+                to validate Norwegian phone numbers.
+              </p>
+              <p>
+                Increased the text size on the logo for desktop view in the
+                style CSS.
+              </p>
+              <p>Hover transform on scale for the logo in CSS.</p>
+              <p>
+                Cursor pointer added for the fa-bars hamburger menu on hover.
+              </p>
+            </div>
+            <div>
+              <h3>Why I did it that way</h3>
+              <p>
+                I choose to use inline validation to give the user quicker
+                feedback on entry by showing a red or green border around the
+                input. The submit button is unclickable and with lower opacity
+                to show that the fields are required to submit.
+              </p>
+              <p>
+                Increased the logo text to make it more visible in relation to
+                other elements around it and a hover function to make it obvious
+                that it is clickable. Cursor pointer for the hamburger menu just
+                to show its clickable if you for some reason use the mobile view
+                on a computer.
+              </p>
+            </div>
+            <div class="page-divider">
+                <div class="line"></div>
+                <a href="#foreverAbroad" class="next">
+                  <div>Next</div>
+                  <i class="fas fa-angle-double-down"></i>
+                </a>
+                <div class="line"></div>
+            </div>
+          </section>
+          <section id="foreverAbroad">
+            <h2>Forever Abroad</h2>
+            <span>Project Exam 1</span>
+            <div class="links">
+              <a
+                href="https://github.com/glennlarsen/project-exam-1-glennlarsen-portfolio-1.git"
+                >Link to GitHub</a
+              >
+              <a href="https://nervous-brahmagupta-75bf12.netlify.app/"
+                >Link to Deployed Site</a
+              >
+            </div>
+            <div class="flex-row">
+              <div>
+                <h3>What was changed</h3>
+                <ul>
+                  <li>Inline form validation for contact form</li>
+                  <li>Added validation for subscribe form</li>
+                  <li>Warmer colors on the home page header image</li>
+                  <li>Optimized size on the home page header image</li>
+                  <li>Category name displayed on each post</li>
+                  <li>Smooth scrolling added</li>
+                  <li>Optimized the carousel slider</li>
+                </ul>
+              </div>
+              <div>
+                <img
+                  src="images/foreverabroad.jpg"
+                  alt="Forever Abroad Home page"
+                />
+              </div>
+            </div>
+            <div>
+              <h3>How I changed it</h3>
+              <p>
+                Inline form validation was changed by making additional check
+                validation functions which was called in an addEventListener
+                when the input and blur event was triggered. I also disabled the
+                button and made an enable button function which was triggered
+                when the whole form was validated.
+              </p>
+              <p>Same form validation was used for the subscribe form.</p>
+              <p>
+                Optimized the home page header image in photoshop by resizing it
+                in relation to the website usage. Also made the colors in the
+                image warmer by using an express function in photoshop.
+              </p>
+              <p>
+                I added the category name for each post by finding the category
+                ID for each post and made an if statement for each category ID
+                to show a specific category name.
+              </p>
+              <p>Added smooth scrolling to the HTML in CSS.</p>
+              <p>
+                Optimized the carousel by using getBoundingClientRect function
+                to find the width of each slide and used the width plus 20px gap
+                to move the slider on click. Moving the slider by width px
+                instead of %.
+              </p>
+            </div>
+            <div>
+              <h3>Why I did it that way</h3>
+              <p>
+                I choose to use inline validation to give the user quicker
+                feedback on entry by showing a red or green border bottom on the
+                input. The submit button is unclickable and with lower opacity
+                to show that the fields are required to submit.
+              </p>
+              <p>
+                Added validation to subscribe so that fake and wrong subscribers
+                would be submitted.
+              </p>
+              <p>
+                Resized the home page header image to make the quality better
+                and to show more of the image. Made the color warmer because it
+                fits the message of the page and the image better.
+              </p>
+              <p>
+                Displaying the category name in the top of the post so that the
+                user know which category they are reading.
+              </p>
+              <p>
+                Smooth scrolling added to make the to top button scroll more
+                elegant.
+              </p>
+              <p>
+                Optimized the carousel slider to make it more accurate and to
+                make it more useful for future projects.
+              </p>
+            </div>
+            <a href="#" class="next to-top">
+                <div>To top</div>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+          </section>
+        </main>
+        <footer>
+            <div class="footer-links">
+            <a href="#rainyDays">Rainy days</a>
+            <a href="#cms">Community Science Museum</a>
+            <a href="#foreverAbroad">Forever Abroad</a>
+        </div>
+        <div class="copyright">Copyright © 2021 Portfolio 1 | All Rights Reserved</div>
+        </footer>
+        <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-image">
+            <div class="caption"></div>
+          </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
