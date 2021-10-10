@@ -32,9 +32,3 @@ burgerMenu.addEventListener('click',function(){
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
 });
-
-overlay.onclick = ("click", (e) => {
-    if(e.target.classList != contains("overlay")) {
-        this.classList.toggle("close");
-    }
-});

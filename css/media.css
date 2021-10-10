@@ -39,6 +39,7 @@
 
   nav ul {
     flex-direction: column;
+    padding-left: 30px;
   }
 }
 
